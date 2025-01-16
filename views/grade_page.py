@@ -30,7 +30,7 @@ def input_page(page: ft.Page, params: Params, basket: Basket):
     rows = ft.Column([
         ft.Row([
             ft.Text(f"День {i+1}"),
-            ft.TextField(hint_text="Введите значение", value=f"{50+(i%2)}")
+            ft.TextField(hint_text="Введите значение")
         ], alignment=ft.MainAxisAlignment.CENTER) for i in range(15)
     ], scroll=ft.ScrollMode.ALWAYS, expand=5, alignment=ft.MainAxisAlignment.CENTER)
 

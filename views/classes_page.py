@@ -13,21 +13,21 @@ def input_page(page: ft.Page, params: Params, basket: Basket):
 
     col_class = ft.Column([
         ft.ResponsiveRow([
-            ft.TextField(hint_text="Название класса ", value="A", col=standart_col),
-            ft.TextField(hint_text="X1", value="1", col=standart_col),
-            ft.TextField(hint_text="X2", value="2", col=standart_col),
-            ft.TextField(hint_text="X3", value="2", col=standart_col),
-            ft.TextField(hint_text="X4", value="1", col=standart_col),],
+            ft.TextField(hint_text="Название класса ", col=standart_col),
+            ft.TextField(hint_text="X1", col=standart_col),
+            ft.TextField(hint_text="X2", col=standart_col),
+            ft.TextField(hint_text="X3", col=standart_col),
+            ft.TextField(hint_text="X4", col=standart_col),],
             run_spacing={"xs": 10},
             alignment=ft.MainAxisAlignment.CENTER,
         ),
 
         ft.ResponsiveRow([
-            ft.TextField(hint_text="Название класса ", value="B", col=standart_col),
-            ft.TextField(hint_text="X1", value="3", col=standart_col),
-            ft.TextField(hint_text="X2", value="4", col=standart_col),
-            ft.TextField(hint_text="X3", value="4", col=standart_col),
-            ft.TextField(hint_text="X4", value="3", col=standart_col),],
+            ft.TextField(hint_text="Название класса ", col=standart_col),
+            ft.TextField(hint_text="X1", col=standart_col),
+            ft.TextField(hint_text="X2", col=standart_col),
+            ft.TextField(hint_text="X3", col=standart_col),
+            ft.TextField(hint_text="X4", col=standart_col),],
             run_spacing={"xs": 10},
             alignment=ft.MainAxisAlignment.CENTER
         ),
@@ -186,7 +186,7 @@ def input_page(page: ft.Page, params: Params, basket: Basket):
                                   expand=True)],
                     expand=2
                 ),
-            ], alignment=ft.MainAxisAlignment.START),
+            ], scroll=ft.ScrollMode.ALWAYS, alignment=ft.MainAxisAlignment.START),
             ft.Column([ft.Row([ft.TextButton(text="Вычислить", scale=1.5, on_click=go_result)],
                               alignment=ft.MainAxisAlignment.CENTER)], alignment=ft.MainAxisAlignment.CENTER, expand=1)
 

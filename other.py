@@ -16,6 +16,7 @@ def get_app_bar(page, selected):
             ft.TextButton("Автоматическая классификация", disabled=selected == 3,
                           on_click=lambda _: page.go(urls.classes_in)),
             ft.TextButton("Скользящая средняя", disabled=selected == 4, on_click=lambda _: page.go(urls.grade_in)),
+            ft.TextButton("Треугольное распределение", disabled=selected == 5, on_click=lambda _: page.go(urls.triangle_in)),
             ft.IconButton(icon=ft.icons.EXIT_TO_APP, icon_color=ft.colors.BLUE, on_click=lambda _: page.window_close()),
         ],
     )

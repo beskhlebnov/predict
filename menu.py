@@ -1,6 +1,6 @@
 import flet as ft
 from flet_route import Routing, path
-from views import markov_page, home_page, classes_page, grade_page
+from views import markov_page, home_page, classes_page, grade_page, triangle_page
 import urls_view as urls
 
 def main(page: ft.Page):
@@ -15,9 +15,12 @@ def main(page: ft.Page):
         path(url=urls.classes_out, clear=True, view=classes_page.result_page),
         path(url=urls.grade_in, clear=True, view=grade_page.input_page),
         path(url=urls.grade_out, clear=True, view=grade_page.result_page),
+        path(url=urls.triangle_in, clear=True, view=triangle_page.input_page),
+        path(url=urls.triangle_out, clear=True, view=triangle_page.result_page),
     ]
 
     Routing(page=page, app_routes=app_routes)
     page.go(page.route)
+
 
 ft.app(target=main)

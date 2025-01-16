@@ -8,3 +8,6 @@ classes_out = "/classes_result?*"
 
 grade_in = "/grade_input"
 grade_out = "/grade_result?*"
+
+triangle_in = "/triangle_input"
+triangle_out = "/triangle_result?*"
